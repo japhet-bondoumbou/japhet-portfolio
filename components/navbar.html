@@ -1,0 +1,45 @@
+<div class="navbar">
+  <div class="nav-container">
+    <a href="#" id="nav-brand" class="nav-brand" aria-label="Japhet Bondoumbou — Accueil">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 48 48" focusable="false">
+          <defs>
+            <linearGradient id="brand-mark-bg" x1="5" y1="4" x2="43" y2="44" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#273449"/>
+              <stop offset="1" stop-color="#101827"/>
+            </linearGradient>
+          </defs>
+          <rect x="1" y="1" width="46" height="46" rx="15" fill="url(#brand-mark-bg)" stroke="#fff" stroke-opacity=".14"/>
+          <path d="m13.5 16.5-5 7.5 5 7.5m21-15 5 7.5-5 7.5" stroke="#fb923c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="24" y="27.5" fill="#fff" font-family="Inter,system-ui,sans-serif" font-size="12.5" font-weight="800" letter-spacing="-.7" text-anchor="middle">JB</text>
+          <path d="M18 35h12" stroke="#fb923c" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="brand-name" data-i18n="brand">Japhet Bondoumbou</span>
+    </a>
+    <nav aria-label="Navigation principale" class="nav-links-desktop">
+      <a href="#" data-nav="home" class="nav-link">Accueil</a>
+      <a href="#" data-nav="about" class="nav-link">À propos</a>
+      <a href="#" data-nav="projects" class="nav-link">Projets</a>
+      <a href="#" data-nav="credentials" class="nav-link">Diplômes et compétences</a>
+      <a href="#" data-nav="contact" class="nav-link">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="#" data-lang-link class="lang-switch" aria-label="Switch language">FR</a>
+      <button type="button" id="theme-toggle" class="icon-btn" aria-label="Changer de thème">
+        <i data-lucide="moon" class="icon-moon"></i>
+        <i data-lucide="sun" class="icon-sun"></i>
+      </button>
+      <button type="button" id="menu-toggle" class="icon-btn menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </div>
+  <nav id="mobile-menu" class="mobile-menu" aria-label="Navigation mobile" hidden>
+    <a href="#" data-nav="home" class="nav-link">Accueil</a>
+    <a href="#" data-nav="about" class="nav-link">À propos</a>
+    <a href="#" data-nav="projects" class="nav-link">Projets</a>
+    <a href="#" data-nav="credentials" class="nav-link">Diplômes et compétences</a>
+    <a href="#" data-nav="contact" class="nav-link">Contact</a>
+  </nav>
+</div>

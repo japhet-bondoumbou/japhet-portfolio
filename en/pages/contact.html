@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Japhet Bondoumbou</title>
+<meta name="description" content="Contact Japhet Bondoumbou to discuss a web project, collaboration or professional opportunity.">
+<link rel="canonical" href="https://japhet-portfolio.vercel.app/en/pages/contact.html">
+<link rel="alternate" hreflang="fr" href="https://japhet-portfolio.vercel.app/pages/contact.html">
+<link rel="alternate" hreflang="en" href="https://japhet-portfolio.vercel.app/en/pages/contact.html">
+<link rel="alternate" hreflang="x-default" href="https://japhet-portfolio.vercel.app/pages/contact.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact — Japhet Bondoumbou">
+<meta property="og:description" content="Contact Japhet Bondoumbou to discuss a web project, collaboration or professional opportunity.">
+<meta property="og:url" content="https://japhet-portfolio.vercel.app/en/pages/contact.html">
+<meta property="og:image" content="https://japhet-portfolio.vercel.app/assets/images/profile/hero-bg.webp">
+<meta property="og:image:alt" content="Professional portrait of Japhet Bondoumbou">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contact — Japhet Bondoumbou">
+<meta name="twitter:description" content="Contact Japhet Bondoumbou to discuss a web project, collaboration or professional opportunity.">
+<meta name="twitter:image" content="https://japhet-portfolio.vercel.app/assets/images/profile/hero-bg.webp">
+<meta name="twitter:image:alt" content="Professional portrait of Japhet Bondoumbou">
+<meta name="theme-color" content="#F97316">
+<link rel="manifest" href="../../site.webmanifest">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={darkMode:'class',theme:{extend:{colors:{accent:{DEFAULT:'#F97316',deep:'#EA580C'},ink:'#202124',muted:'#666B73',paper:'#FAFAF8',surface:'#F1F2F0',line:'#E2E4E7'}}}};</script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<link rel="stylesheet" href="../../css/style.css">
+<script>(function(){try{var s=localStorage.getItem('theme');var d=s==='dark'||(!s&&window.matchMedia('(prefers-color-scheme: dark)').matches);if(d)document.documentElement.classList.add('dark');}catch(e){}})();</script>
+</head>
+<body data-page="contact" data-lang="en">
+<a href="#main" class="skip-link">Skip to main content</a>
+<div id="loader-root"></div>
+<header id="navbar-root"></header>
+<main id="main" class="contact-page">
+  <section class="contact-hero">
+    <div class="container">
+      <p class="contact-eyebrow"><span aria-hidden="true"></span> Let’s connect</p>
+      <h1 class="contact-title">Have an idea?<br><span>Let’s talk.</span></h1>
+      <p class="contact-lead">A collaboration, project or opportunity: tell me what you have in mind. I’d be glad to hear about it.</p>
+    </div>
+  </section>
+
+  <section class="section contact-section" aria-label="Contact form">
+    <div class="container contact-layout">
+      <aside class="contact-aside">
+        <div class="contact-aside-card">
+          <div class="contact-aside-icon"><i data-lucide="message-circle" aria-hidden="true"></i></div>
+          <p class="contact-aside-kicker">Simple and direct</p>
+          <h2>One message is all it takes.</h2>
+          <p>Fill out the form and your WhatsApp app will open with a message ready to send.</p>
+          <address class="contact-details"><ul data-contact-details></ul></address>
+          <div class="contact-steps" aria-label="Steps">
+            <div><span>01</span><p>Tell me about your request</p></div>
+            <div><span>02</span><p>Review the prepared message</p></div>
+            <div><span>03</span><p>Send it from WhatsApp</p></div>
+          </div>
+        </div>
+        <p class="contact-privacy"><i data-lucide="shield-check" aria-hidden="true"></i> Nothing is sent automatically: you stay in control before sending.</p>
+      </aside>
+
+      <div class="contact-form-card">
+        <div class="contact-form-heading">
+          <div>
+            <p class="contact-form-kicker">Your message</p>
+            <h2>How can I help?</h2>
+          </div>
+          <span class="contact-required"><span aria-hidden="true">*</span> Required fields</span>
+        </div>
+
+        <div id="contact-status" hidden></div>
+        <form id="contact-form" class="form contact-form" novalidate>
+          <div class="contact-form-grid">
+            <div class="form-group">
+              <label for="cf-name">Full name <span aria-hidden="true">*</span></label>
+              <input id="cf-name" name="name" type="text" autocomplete="name" required>
+              <p class="form-error" data-error="name"></p>
+            </div>
+            <div class="form-group">
+              <label for="cf-email">Email address <span aria-hidden="true">*</span></label>
+              <input id="cf-email" name="email" type="email" autocomplete="email" required>
+              <p class="form-error" data-error="email"></p>
+            </div>
+            <div class="form-group">
+              <label for="cf-subject">Subject <span aria-hidden="true">*</span></label>
+              <input id="cf-subject" name="subject" type="text" required>
+              <p class="form-error" data-error="subject"></p>
+            </div>
+            <div class="form-group">
+              <label for="cf-type">Request type</label>
+              <select id="cf-type" name="type">
+                <option value="">Choose an option</option>
+                <option value="collaboration">Collaboration</option>
+                <option value="project">Project</option>
+                <option value="opportunity">Professional opportunity</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cf-message">Your message <span aria-hidden="true">*</span></label>
+            <textarea id="cf-message" name="message" rows="6" required></textarea>
+            <p class="form-error" data-error="message"></p>
+          </div>
+          <div class="contact-submit-row">
+            <button type="submit" class="btn btn-primary">Continue with WhatsApp <i data-lucide="arrow-up-right"></i></button>
+            <p class="form-note"><i data-lucide="lock-keyhole" aria-hidden="true"></i> Your message opens in WhatsApp so you can review and send it.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+<footer id="footer-root"></footer>
+<div id="modal-root"></div>
+<script>window.SITE_BASE='../../';window.SITE_LANG='en';window.SITE_PAGE='contact';</script>
+<script src="../../data/site.js"></script>
+<script src="../../data/translations.js"></script>
+<script src="../../data/credentials.js"></script>
+<script src="../../data/projects.js"></script>
+<script src="../../data/skills.js"></script>
+<script src="../../js/theme.js"></script>
+<script src="../../js/components.js"></script>
+<script src="../../js/language.js"></script>
+<script src="../../js/animations.js"></script>
+<script src="../../js/contact.js"></script>
+<script src="../../js/main.js"></script>
+</body>
+</html>

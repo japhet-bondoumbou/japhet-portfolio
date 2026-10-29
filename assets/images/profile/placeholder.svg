@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Photo de profil à venir">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFEDD5"/>
+      <stop offset="1" stop-color="#FED7AA"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#g)"/>
+  <circle cx="200" cy="160" r="70" fill="#F97316" opacity=".85"/>
+  <path d="M70 360 C70 280 130 250 200 250 C270 250 330 280 330 360 Z" fill="#F97316" opacity=".85"/>
+  <text x="200" y="385" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="18" fill="#7C2D12" font-weight="600">JB</text>
+</svg>
