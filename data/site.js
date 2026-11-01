@@ -1,6 +1,6 @@
 // Données centrales du site. Modifiez ces valeurs pour personnaliser le portfolio.
 window.SITE_DATA = {
-  domain: "https://japhet-portfolio.vercel.app", // Domaine réel — mettez à jour après déploiement
+  domain: "https://japhet-portfolio-nu.vercel.app", // Domaine réel — mettez à jour après déploiement
   name: "Japhet Bondoumbou",
   fullName: "BONDOUMBOU PEYA Japhet Richiland",
   title: {

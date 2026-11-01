@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /404.html
 
-Sitemap: https://japhet-portfolio.vercel.app/sitemap.xml
+Sitemap: https://japhet-portfolio-nu.vercel.app/sitemap.xml
