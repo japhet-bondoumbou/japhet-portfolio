@@ -109,9 +109,10 @@
     media.className = 'card-media project-media project-media-' + item.category;
     if (item.image) {
       var image = document.createElement('img');
-      image.src = BASE + item.image;
-      image.alt = '';
       image.loading = 'lazy';
+      image.decoding = 'async';
+      image.alt = '';
+      image.src = BASE + item.image;
       image.addEventListener('error', function () {
         media.classList.add('project-media-placeholder');
         image.remove();

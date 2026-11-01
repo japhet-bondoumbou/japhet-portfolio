@@ -74,17 +74,18 @@
 
     if (item.image) {
       var img = document.createElement('img');
-      img.src = BASE + item.image;
-      img.alt = title;
       img.loading = 'lazy';
+      img.decoding = 'async';
+      img.alt = title;
+      img.src = BASE + item.image;
       body.appendChild(img);
     }
 
     if (item.pdf) {
       var iframe = document.createElement('iframe');
+      iframe.loading = 'lazy';
       iframe.src = BASE + item.pdf;
       iframe.title = title;
-      iframe.loading = 'lazy';
       body.appendChild(iframe);
       var dl = document.createElement('a');
       dl.href = BASE + item.pdf;
@@ -131,9 +132,10 @@
     media.className = 'card-media credential-media';
     if (item.image) {
       var preview = document.createElement('img');
-      preview.src = BASE + item.image;
-      preview.alt = title;
       preview.loading = 'lazy';
+      preview.decoding = 'async';
+      preview.alt = title;
+      preview.src = BASE + item.image;
       preview.addEventListener('error', function () {
         media.classList.add('credential-media-empty');
         preview.remove();
@@ -279,17 +281,31 @@
       window.SKILLS_DATA.hard.forEach(function (cat) {
         var div = document.createElement('div');
         div.className = 'skill-cat';
+        var heading = document.createElement('div');
+        heading.className = 'skill-cat-heading';
         var h = document.createElement('h3');
         h.textContent = cat.category[LANG] || cat.category.fr;
+        var count = document.createElement('span');
+        count.className = 'skill-count';
+        count.textContent = String(cat.items.length).padStart(2, '0');
+        count.setAttribute('aria-hidden', 'true');
+        heading.appendChild(h);
+        heading.appendChild(count);
         var list = document.createElement('div');
         list.className = 'badge-list';
         cat.items.forEach(function (it) {
           var s = document.createElement('span');
-          s.className = 'badge badge-accent';
-          s.textContent = it;
+          s.className = 'badge badge-accent skill-tech';
+          var icon = document.createElement('i');
+          icon.className = it.icon + ' colored';
+          icon.setAttribute('aria-hidden', 'true');
+          var name = document.createElement('span');
+          name.textContent = it.name;
+          s.appendChild(icon);
+          s.appendChild(name);
           list.appendChild(s);
         });
-        div.appendChild(h);
+        div.appendChild(heading);
         div.appendChild(list);
         hard.appendChild(div);
       });
